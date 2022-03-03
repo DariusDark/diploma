@@ -84,8 +84,6 @@ body {
   margin: 0px auto;
   padding: 0px 10px;
 }
-.header {
-}
 .header__top-panel {
   padding: 25px 0px 28px 0px;
   background-color: #1c374c;
@@ -238,8 +236,6 @@ body {
   display: flex;
   -ms-align-items: center;
   align-items: center;
-}
-.header-middle__nav {
 }
 .list {
   display: -webkit-flex;
@@ -653,8 +649,6 @@ body {
 .toggle {
   padding: 50px 0px 75px 0px;
 }
-.toggle__row {
-}
 .toogle__body {
   padding: 0px 100px 0px 100px;
   user-select: none;
@@ -683,10 +677,6 @@ body {
 }
 .toggle__title.active:before {
   content: "\f068";
-}
-
-.toggle__title.active {
-  /*box-shadow: 0px -35px 80px 10px rgba(0,0,0,.24);*/
 }
 
 .toggle__text {
@@ -734,10 +724,6 @@ body {
   font-weight: 700;
   line-height: 42px;
   color: #1e2428;
-}
-.form {
-}
-.form__department {
 }
 .form__text {
   font-family: "Roboto", Sans-serif;
@@ -832,8 +818,6 @@ body {
 .footer-top__links a:hover {
   color: #fff;
 }
-.link {
-}
 .footer__footer-main {
   padding: 50px 0px 70px 0px;
 }
@@ -847,8 +831,6 @@ body {
 .footer-main__footer-column {
   margin: 0px 3.5px;
   flex: 1 0 25%;
-}
-.footer-column__body {
 }
 .footer-column__title {
   line-height: 1.5;
@@ -882,8 +864,6 @@ body {
 .footer-column__time-table div:first-child {
   margin-top: 12px;
 }
-.footer-column__posts {
-}
 .post-1 {
   margin-bottom: 27px;
 }
@@ -900,8 +880,6 @@ body {
 }
 .post-1__date {
   color: #fff;
-}
-.footer-column__links {
 }
 .column__link a {
   font-size: 16px;
