@@ -1144,7 +1144,7 @@ position: relative;
 }
 .appointment__container {
   padding: 80px 50px 90px 50px;
-  background: url(../img/Group-6-9.webp) left -20px/100% auto no-repeat;
+  background: url(../img/Group-6-9.webp) left -20px/cover no-repeat;
 }
 .appointment__row {
   display: -webkit-flex;
