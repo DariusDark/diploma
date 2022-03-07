@@ -316,7 +316,6 @@ body {
   line-height: 25px;
   color: #42474c;
   margin-bottom: 23px;
-  white-space: nowrap;
 }
 .health-care__text-2 {
   font-family: "Roboto", Sans-serif;
@@ -325,7 +324,6 @@ body {
   line-height: 25px;
   color: #42474c;
   margin-bottom: 25px;
-  white-space: nowrap;
 }
 .health-care__quote {
   font-family: "Roboto", Sans-serif;
@@ -380,6 +378,7 @@ body {
   line-height: 25px;
   color: #42474c;
   margin-bottom: 50px;
+  max-width: 500px;
 }
 
 .consultation__link a {
@@ -828,7 +827,8 @@ body {
   display: flex;
 }
 .footer-main__footer-column {
-  margin: 0px 3.5px;
+  display: flex;
+  justify-content: center;
   flex: 1 0 25%;
 }
 .footer-column__title {
