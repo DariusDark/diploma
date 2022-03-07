@@ -49,8 +49,6 @@ body {
 	margin: 0px auto;
 	padding: 0px 10px;
 }
-.header {
-}
 .header__top-panel {
 	padding: 25px 0px 28px 0px;
 	background-color: #1c374c;
@@ -208,7 +206,6 @@ body {
 	-ms-align-items: center;
 	align-items: center;
 }
-.header-middle__nav {}
 .list {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -444,48 +441,6 @@ body {
 
 
 
-
-
-
-
-.placement {
-	padding: 136px 0px;
-	position: relative;
-}
-.placement:before {
-	content:'';
-	position: absolute;
-	background: url(../img/dummy-map.png) left top/100% auto no-repeat;
-	height: 300px;
-	width: 100%;
-	left: 0;
-	top: 0;
-	filter: blur(1.5px);
-}
-.placement__row {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: center;
-}
-.placement__text {
-	z-index: 2;
-	font-weight: 300;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0px;
-    color: #42474c;
-}
-
-
-
-
-
-
 .footer {
 	background-color: #2B3238;
 }
@@ -549,7 +504,6 @@ body {
 .footer-top__links a:hover {
 	color: #fff;
 }
-.link {}
 .footer__footer-main {
 	padding: 50px 0px 70px 0px;
 }
@@ -564,7 +518,6 @@ body {
 	margin:0px 3.5px;
 	flex: 1 0 25%;
 }
-.footer-column__body {}
 .footer-column__title {
 	line-height: 1.5;
     font-family: PT Serif, serif;
@@ -597,7 +550,6 @@ body {
 .footer-column__time-table div:first-child{
 	margin-top: 12px;
 }
-.footer-column__posts {}
 .post-1 {
 	margin-bottom: 27px;
 }
@@ -615,7 +567,6 @@ body {
 .post-1__date {
 	color: #fff;
 }
-.footer-column__links {}
 .column__link a{
 	font-size: 16px;
 	line-height: 1.9;
