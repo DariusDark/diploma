@@ -515,7 +515,8 @@ body {
 	display: flex;
 }
 .footer-main__footer-column {
-	margin:0px 3.5px;
+	display: flex;
+	justify-content: center;
 	flex: 1 0 25%;
 }
 .footer-column__title {
