@@ -1,8 +1,26 @@
 const animItems = document.querySelectorAll('._anim-items');
 
+const empty = document.getElementById('empty');
+const navbar = document.getElementById('navbar');
+const topPanel = document.querySelector('.header__top-panel');
+empty.style.setProperty('--height', navbar.offsetHeight + 'px');
+
+const bars = document.getElementById('bars');
+const times = document.getElementById('times');
+
+
+bars.addEventListener('click', function() {
+	this.classList.add('active');
+});
+
+times.addEventListener('click', () => {
+	bars.classList.remove('active');
+})
 if (animItems.length > 0) {
-	window.addEventListener ('scroll', animOnScroll);
+	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll() {
+		navbar.classList.toggle('header__middle--fixed', this.pageYOffset >= topPanel.offsetHeight);
+		empty.classList.toggle('header__middle-empty--active', navbar.classList.contains('header__middle--fixed'));
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
 			const animItemHeight = animItem.offsetHeight;
@@ -18,18 +36,18 @@ if (animItems.length > 0) {
 			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
 				animItem.classList.add('_active');
 			}
-			else{
+			else {
 				if (!animItem.classList.contains('_anim-no-hide')) {
 					animItem.classList.remove('_active');
 				}
 			}
 		}
 	}
-	function offset(el){
+	function offset(el) {
 		const rect = el.getBoundingClientRect(),
 			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return {top:rect.top + scrollTop, left: rect.left + scrollLeft}
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
 	setTimeout(() => {
 		animOnScroll()

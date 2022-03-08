@@ -8,11 +8,12 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="none" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="fonts/ptserif.css" />
-    <link rel="stylesheet" href="fonts/roboto.css" />
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="fonts/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="stylesheet" href="./fonts/ptserif.css" />
+    <link rel="stylesheet" href="./fonts/roboto.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/brands.css" />
     <title>Лаборатория Диамед | Качественно и быстро</title>
   </head>
   <body>
@@ -39,20 +40,34 @@
             </div>
           </div>
         </div>
-        <div class="header__header-middle">
+        <div class="header__middle-empty" id="empty"></div>
+        <div class="header__header-middle" id="navbar">
           <div class="container">
             <div class="header-middle__row">
               <div class="header-middle__image">
-                <a href="index.html"><img src="img/logo.webp" alt="" /></a>
+                <a href="./index.html"><img src="img/logo.webp" alt="" /></a>
               </div>
               <div class="header-middle__body">
+                <div class="header-middle__mobile">
+                  <i class="fas fa-bars" id="bars"></i>
+                  <nav class="header-middle__nav-mobile">
+                    <ul class="list">
+                      <i class="fas fa-times" id="times"></i>
+                      <li><a href="./index.html" class="nav-active">домой</a></li>
+                      <li><a href="./pages/about/index.html">о нас</a></li>
+                      <li><a href="./pages/doctors/index.html">врачи</a></li>
+                      <li><a href="./pages/services/index.html">услуги</a></li>
+                      <li><a href="./pages/contacs/index.html">контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
                 <nav class="header-middle__nav">
                   <ul class="list">
-                    <li><a href="index.html" class="nav-active">домой</a></li>
-                    <li><a href="pages/about/index.html">о нас</a></li>
-                    <li><a href="pages/doctors/index.html">врачи</a></li>
-                    <li><a href="pages/services/index.html">услуги</a></li>
-                    <li><a href="pages/contacs/index.html">контакты</a></li>
+                    <li><a href="./index.html" class="nav-active">домой</a></li>
+                    <li><a href="./pages/about/index.html">о нас</a></li>
+                    <li><a href="./pages/doctors/index.html">врачи</a></li>
+                    <li><a href="./pages/services/index.html">услуги</a></li>
+                    <li><a href="./pages/contacs/index.html">контакты</a></li>
                   </ul>
                 </nav>
               </div>

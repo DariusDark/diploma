@@ -8,7 +8,8 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="none" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../../css/adaptive.css">
     <link rel="stylesheet" href="../../fonts/ptserif.css" />
     <link rel="stylesheet" href="../../fonts/roboto.css" />
     <link rel="stylesheet" href="../../fonts/fontawesome/css/all.css" />
@@ -38,7 +39,8 @@
             </div>
           </div>
         </div>
-        <div class="header__header-middle">
+        <div class="header__middle-empty" id="empty"></div>
+        <div class="header__header-middle" id="navbar">
           <div class="container">
             <div class="header-middle__row">
               <div class="header-middle__image">
@@ -47,6 +49,23 @@
                 /></a>
               </div>
               <div class="header-middle__body">
+                <div class="header-middle__mobile">
+                  <i class="fas fa-bars" id="bars"></i>
+                  <nav class="header-middle__nav-mobile">
+                    <ul class="list">
+                      <i class="fas fa-times" id="times"></i>
+                      <li><a href="../../index.html">домой</a></li>
+                      <li><a href="../about/index.html">о нас</a></li>
+                      <li>
+                        <a href="../doctors/index.html" class="nav-active"
+                          >врачи</a
+                        >
+                      </li>
+                      <li><a href="../services/index.html">услуги</a></li>
+                      <li><a href="../contacs/index.html">контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
                 <nav class="header-middle__nav">
                   <ul class="list">
                     <li><a href="../../index.html">домой</a></li>
