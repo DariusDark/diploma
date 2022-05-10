@@ -518,7 +518,6 @@ body {
 .footer-main__footer-column {
   flex: 1 0 25%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .footer-column__title {
