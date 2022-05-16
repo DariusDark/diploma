@@ -271,12 +271,25 @@
 
 .reviews {
   padding: 148px 0px 114px 0px;
-  background: url(../../../img/Group-91.webp) -140px top/125% auto no-repeat;
+  background: url(../../../img/Group-91.webp) -140px top/cover no-repeat;
+  position: relative;
+}
+.reviews:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff34;
+  z-index: 1;
 }
 .reviews__row {
   padding: 0px 10px;
 }
 .reviews__body {
+  position: relative;
+  z-index: 2;
   padding: 0px 15px;
   margin-left: 50%;
 
@@ -291,6 +304,7 @@
   line-height: 42px;
   color: #1e2428;
   margin-bottom: 20px;
+  padding-right: 10px;
 }
 
 .slider__text {
