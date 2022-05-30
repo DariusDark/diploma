@@ -2,7 +2,7 @@
   padding-top: 50px;
 }
 .health-care__row {
-  margin: 0px 10px;
+  flex-wrap: wrap;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -10,18 +10,25 @@
   display: flex;
   -ms-align-items: center;
   align-items: center;
+  justify-content: center;
 }
 .health-care__image {
-  margin-left: -233px;
-  margin-right: -103px;
-
+  flex: 1 0 50%;
   transform: translate(-30%, 0);
   opacity: 0;
   transition: all 0.3s ease;
+  text-align: center;
+}
+.health-care__image img {
+  width: 100%;
+  min-width: 600px;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
 }
 .health-care__body {
-  margin-left: 30px;
-
+  margin: 20px 0px;
+  flex: 0 0 50%;
   transform: translate(50%, 0);
   opacity: 0;
   transition: all 0.3s ease;
@@ -86,7 +93,7 @@
 
 .consultation {
   padding: 96px 0px 107px 0px;
-  background: url(../../../img/Group-8.webp) center center/126% auto no-repeat;
+  background: url(../../../img/Group-8.webp) center center/cover no-repeat;
 }
 .consultation__body {
   padding: 0px 10px;
@@ -203,7 +210,7 @@
   transition: 0.8s transform ease;
 }
 
-.card__body:hover {
+.cards-timetable__card:hover .card__body {
   transform: rotateX(180deg);
 }
 .item__row {
@@ -219,10 +226,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.item__row > * {
-  transform-style: preserve-3d;
-  transform: translateZ(30px);
 }
 .item__row-back {
   transform-style: preserve-3d;
@@ -272,7 +275,7 @@
   background: url(../img/flip_cards/2.jpg) center/cover no-repeat;
 }
 .item__row-back-1 {
-  transform: translateZ(30px);
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;

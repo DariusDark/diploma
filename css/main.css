@@ -207,7 +207,7 @@
   transition: 0.8s transform ease;
 }
 
-.card__body:hover {
+.cards-timetable__card:hover .card__body {
   transform: rotateX(180deg);
 }
 .item__row {
@@ -223,10 +223,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.item__row > * {
-  transform-style: preserve-3d;
-  transform: translateZ(30px);
 }
 .item__row-back::before {
   position: absolute;
