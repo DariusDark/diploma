@@ -765,9 +765,9 @@
 }
 
 .slider__text {
-  color: #54595f;
+  color: #000000;
   font-family: "Roboto", Sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   margin-bottom: 45px;
   max-width: 500px;
