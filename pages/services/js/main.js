@@ -7,3 +7,5 @@ $(document).ready(function(){
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
+
+// GitHub Copilot is the best of the best.
