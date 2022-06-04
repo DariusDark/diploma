@@ -370,14 +370,24 @@
                   <div class="form__title _anim-items _anim-no-hide">
                     Барои вохӯрӣ номнавис шавед
                   </div>
-                  <form action="post" class="form">
+                  <form class="form" id="contactForm">
                     <div class="form__name _anim-items _anim-no-hide">
                       <p class="form__text">Номи Пурра</p>
-                      <input type="text" />
+                      <input
+                        name="fullName"
+                        type="text"
+                        id="full-name"
+                        required
+                      />
                     </div>
                     <div class="form__phone _anim-items _anim-no-hide">
                       <p class="form__text">Рақами мобилӣ</p>
-                      <input type="tel" />
+                      <input
+                        name="phoneNumber"
+                        type="tel"
+                        id="telephone"
+                        required
+                      />
                     </div>
                     <div class="form__btn-anim _anim-items _anim-no-hide">
                       <button type="submit" class="form__btn">
